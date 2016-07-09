@@ -13,7 +13,7 @@ def scraping(url):
     htmlrp.close()
 
     soup = BeautifulSoup(html)
-    for link in soup.findAll("a"):
+    for link in soup.findAll("script"):
         print(link)
 
 if __name__ == '__main__':
